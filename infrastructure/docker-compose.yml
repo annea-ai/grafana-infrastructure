@@ -1,0 +1,21 @@
+version: '3.5'
+
+networks:
+  grafnet:
+    name: grafnet
+    external: false
+    driver: bridge
+
+services:
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    networks:
+      - grafnet
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./mariadb/data:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"

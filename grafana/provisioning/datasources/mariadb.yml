@@ -1,0 +1,13 @@
+# https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources
+apiVersion: 1
+deleteDatasources:
+  - name: MariaDB
+
+datasources:
+  - name: MariaDB
+    type: mysql
+    url: mariadb:3306
+    database: example_db
+    user: root
+    secureJsonData:
+      password: root
