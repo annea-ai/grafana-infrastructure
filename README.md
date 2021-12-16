@@ -1,7 +1,9 @@
 Grafana Infrastructure
 ======================
 
-This repository contains an example infrastructure for deploying and provisioning Grafana.
+This repository contains an example infrastructure for running and provisioning Grafana.
+
+This repository is to large extent an implementation of [this](https://medium.com/swlh/easy-grafana-and-docker-compose-setup-d0f6f9fcec13) excellent blogpost by [Graham Bryan](https://grahambryan.medium.com/).
 
 # Docker
 The infrastructure requires [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/)
